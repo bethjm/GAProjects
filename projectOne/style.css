@@ -1,0 +1,174 @@
+.wholesite{
+background-color: white;
+display: flex;
+flex-direction: column;
+}
+	.navbar{
+        list-style: none; 
+        width: 100%
+    }
+        .navbarlistoverlord{
+            /* position: sticky; */
+            display: flex;
+            flex-direction: row;
+            list-style: none; 
+            margin: 0;
+            padding: 0;  
+            overflow: hidden;
+            background-color: grey;
+            justify-content: center;
+            flex-grow: 1;
+        
+        }
+
+        li {
+            min-width: 15%;
+            height: 100%
+            /* float: left; */
+
+        }
+
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+
+            padding: 1em;
+            display: block;
+
+        }
+        li a:hover{
+            background-color: black;
+        }
+       /* this makes the page int he nav bar a different color when you're on the page */
+
+       .active {
+        background-color: black;
+      }
+		#home{
+
+        }
+		#bio{
+
+        }
+		#resume{
+
+        }
+		#projects{
+
+        }
+		#links{
+
+        }
+		#chat{
+
+        }
+
+        /* use this link later to get hover text over images https://blog.logrocket.com/responsive-image-gallery-css-flexbox/#creating-responsive-image-gallery-uniform-image-dimensions */
+/* -------------------------------------------------------------- */
+
+	.homepage{}
+		.whoisbeth{}
+			#whoheaderhome{}
+			#whophotohome{}
+			#whoparahome{}
+
+		.whatpeoplearesaying{}
+			#whatheaderhome{}
+			.whatphotohome{}
+
+		.glimpseintolife{
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 300px;
+        }
+            .glimpseheader{}
+            .glimpsephotolist{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: start;
+                gap: 10px;
+            }
+
+            .glimpsephotolist::after{
+                content: "";
+                flex-basis: 350px;
+            }
+
+            .glimpsephotoli{
+                flex-basis: 150px;
+                list-style: none; 
+                
+            }
+			    .glimpsephotohome{
+                    object-fit: cover;
+                    max-width: 100%;
+                    min-height: 100;
+                    width: 100%;
+                    height: 100%;
+                    vertical-align: middle;
+                    border-radius: 5px;
+                    flex-grow: 10;
+                    
+                }
+
+               
+/* -------------------------------------------------------------- */
+
+
+	.biopage{
+
+    }
+		#biophoto{}
+		.biobutton{}
+		.biotitle{}
+		.biopara{}
+
+/* -------------------------------------------------------------- */
+
+
+	.resumepage{
+
+    }
+		#resumetitle{}
+		#downloadableresume{}
+
+/* -------------------------------------------------------------- */
+
+
+	.projects{
+
+    }
+		#projectsheader{}
+		/* will need more here for projects and carousel */
+
+/* -------------------------------------------------------------- */
+
+
+	.linkspage{
+
+    }
+		/* will need more here for linked in and git hub links */
+		
+/* -------------------------------------------------------------- */
+
+
+	.letschat{
+
+    }
+        /* will need more here for the form submission
+        will need here for alert */
+/* -------------------------------------------------------------- */
+
+	.footer{
+        display: flex;
+        justify-content: end;
+    }
+		#footername{}
+		#footeremail{}
+		#footercell{}
+		/* will need more here for footer socials */
+
+
+       
