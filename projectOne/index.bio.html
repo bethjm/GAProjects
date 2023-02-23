@@ -10,22 +10,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <ul class="navbarlistoverlord">
+            <!-- figure out how to 1. get this on everypage 2. get it to stick when scrolling 3. buttons to link to other pages -->
+            <!-- have nav bar highlight tab that you are on -->
+            <li id="home"><a href="index.home.html">HOME</a></li>
+            <li id="home"><a href="index.bio.html">BIO</a></li>
+            <li id="resume"><a href="index.resume.html">RESUME</a></li>
+            <li id="projects"><a href="index.projects.html">PROJECTS</a></li>
+            <li id="links"><a href="index.links.html">LINKS</a></li>
+            <li id="chat"><a href="index.chat.html">LET'S CHAT!</a></li>
+        </ul>
+    </nav>
 
     <div class="biopage">
         <!-- position these to the left of the page -->
-        <img id="biophoto">
+        <div class="stackthese">
+        <img id="biophoto" src="headshot.jpg">
         <!-- image of myself -->
         <button class="biobutton">Contact Beth</button>
+        </div>
         <!-- have the button bring up a modal for contact form -->
         <!-- position these to the right of the page -->
-        <h4 class="biotitle">Hi, I'm Beth...</h4>
-        <p class="biopara">Talk about me as a person</p>
-        <h4 class="biotitle">What led me here?</h4>
-        <p class="biopara">Talk about my journey into software and quitting training. How the 2 professions overlap</p>
-        <h4 class="biotitle">Why do I do this?</h4>
-        <p class="biopara">Talk about my desire to go into project managment. Draw on my skills with trainig. Love of building people up and helping them reach their potiential</p>
-        <h4 class="biotitle">My commitment to...</h4>
-        <p class="biopara">Why you can count on me as an employee. Dedication to improvement. Endless curiousity. Soft skills. Ability to create order in chaos</p>
+        <div class="textstack">
+            <h4 class="biotitle">Hi, I'm Beth...</h4>
+            <p class="biopara">Talk about me as a person.</p>
+            <h4 class="biotitle">What led me here?</h4>
+            <p class="biopara">Talk about my journey into software and quitting training. How the 2 professions overlap</p>
+            <h4 class="biotitle">Why do I do this?</h4>
+            <p class="biopara">Talk about my desire to go into project managment. Draw on my skills with trainig. Love of building people up and helping them reach their potiential</p>
+            <h4 class="biotitle">My commitment to...</h4>
+            <p class="biopara">Why you can count on me as an employee. Dedication to improvement. Endless curiousity. Soft skills. Ability to create order in chaos</p>
+        </div>
     </div>
        
 </body>
