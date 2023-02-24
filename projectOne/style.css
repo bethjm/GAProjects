@@ -1,5 +1,5 @@
 .wholesite{
-background-color: #8FC1B5;
+/* background-color: #8FC1B5; */
 /* display: flex;
 flex-direction: column; */
 }
@@ -20,12 +20,12 @@ p {
     }
         .navbarlistoverlord{
             /* position: sticky; */
+            height: 30%;
             margin: 0px;
             padding: 0px;
             display: flex;
             flex-direction: row;
             list-style: none; 
-            margin: 0;
             padding: 0;  
             overflow: hidden;
             background-color: #146551;
@@ -44,12 +44,14 @@ p {
         }
 
         li a{
+            margin-top: 10%;
+            margin-bottom: 10%;
             display: block;
             color: white;
             text-align: center;
-
             padding: 1em;
             display: block;
+            
 
         }
         li a:hover{
@@ -84,28 +86,107 @@ p {
 
 	.homepage{
         display: flex;
-        flex-direction: column;
-        margin-left: 25px;
-        margin-right: 25px;
+        flex-direction: column;;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left:15%
     }
 
+    .homepageheadshot{
+        flex-basis: 50px;
+        object-fit: cover;
+        max-width: 100%;
+        border-radius: 5px; 
+        padding-bottom: 20px; 
+        width: 200px;
+        height: 200px;
+
+    }
+    #whoisbethpara{
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: 30%;
+        justify-content: center;
+        padding-left: 50px;
+    }
         .title{
             margin-bottom: 5%;
         }
+
 		.whoisbeth{
-            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-basis: 30%;
+
         }
 			#whoheaderhome{
                 font-family: 'Libre Baskerville', serif;
             }
 			#whoparahome{
             }
+/* -------------------------------------------------------------- */
 
 		.whatpeoplearesaying{
-            font-family: 'Libre Baskerville', serif;
+            
         }
-			#whatheaderhome{}
-			.whatphotohome{}
+			#whatheaderhome{
+                font-family: 'Libre Baskerville', serif;
+            }
+
+            .carousel-container {
+                width: 70%;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .carousel-text {
+                width: 80%;
+                background: white;
+                padding: 10px;
+                border-radius: 10px;
+                /* box-sizing: border-box; */
+            }
+
+            .whattexthome {
+                width: 100%;
+                border-radius: 10px;
+                display: none;
+                font-family: 'Work Sans', sans-serif;
+            }
+
+            .carousel-button {
+                align-self: center;
+                background: rgba(143, 193, 181, .85);
+                color: black;
+                padding: 10px;
+                border-radius: 50%;
+                text-align: center;
+            }
+
+            .carousel-button:hover {
+                cursor: pointer;
+                background: rgba(255, 255, 255, .85);
+                /* color: white; */
+            }
+
+            .whattexthome:first-of-type {
+                display:block
+            }
+
+            /* .whattexthome:nth-last-of-type(2) {
+                display:block
+            }
+
+            .whattexthome:nth-last-of-type(3) {
+                display:block
+            } */
+
+            /* this gets all of them to show up under eachother- figure out how to get them next to eachother */
+
+
+/* -------------------------------------------------------------- */
+
 
 		.glimpseintolife{
             font-family: 'Libre Baskerville', serif;
@@ -195,29 +276,145 @@ p {
             font-family: 'Work Sans', sans-serif;
         }
 
+
+        #modal{
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 500px;;
+            width: 500px;
+            margin-left: 5%;
+            margin-top: 5%;
+            z-index: 1;
+            overflow:auto;
+            display: none;
+        }
+
+        #modal-textbox {
+            background-color:white;
+            height: 350px;
+            width: 300px;
+            border-radius: 10px;
+            margin: 150px auto;
+            box-shadow: 4px, 4px, 4px, 4px rgba(0, 0, 0, .2);
+            padding: 3px;
+            line-height: 120%;
+        }
+
+       
+
+        #modal-footer {
+            margin-top: 20%;
+            text-align: right;
+        }
+
+        #biomodalheader {
+            font-family: 'Libre Baskerville', serif;
+            padding-bottom: 15px;
+            line-height: 120%;
+        }
+
+        .biomodaltext {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .modal-buttons{
+            padding: 14px 18px;
+            background-color: #007566;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            font-family: 'Libre Baskerville', serif;
+            cursor: pointer;
+
+        }
+
+        #close{
+            
+        }
 /* -------------------------------------------------------------- */
 
 
 	.resumepage{
-     
+     height: 1000px;
     }
 		#resumetitle{
             font-family: 'Libre Baskerville', serif;
+            text-align: center;
+            font-size: 2.5em;
         }
 		#downloadableresume{}
+
+        iframe {
+            margin-left: 5%;
+            margin-right: 15%;
+            height: 100%;
+            width: 80%;
+        }
 
 /* -------------------------------------------------------------- */
 
 
 	.projects{
         font-family: 'Libre Baskerville', serif;
+        /* display: flex;
+        flex-direction: column; */
+
     }
 		#projectsheader{
-
+            text-align: center;
+            margin-bottom: 20%;
         }
 
+        .projecttext {
+            width: 100%;
+            border-radius: 10px;
+            margin-left: 20%;
+
+            font-family: 'Work Sans', sans-serif;
+            display: none;
+        }
+
+        .carousel-containerproject {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            /* justify-content: space-around; */
+        }
+
+        .carouseltextproject {
+            width: 80%;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            /* box-sizing: border-box; */
+        }
+
+        .carouselbuttonproject {
+            align-self: center;
+            margin-left: 35%;
+            margin-right: 30%;
+            background: rgba(143, 193, 181, .85);
+            color: black;
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .carousel-buttonproject:hover {
+            cursor: pointer;
+            background: rgba(255, 255, 255, .85);
+            /* color: white; */
+        }
+
+        .whattexthome:first-of-type {
+            display:block
+        }
+
+
         
-		/* will need more here for projects and carousel */
 
 /* -------------------------------------------------------------- */
 
@@ -244,11 +441,27 @@ p {
 		/* will need more here for linked in and git hub links */
 		
 /* -------------------------------------------------------------- */
-
+    .chatbody{
+        background-color: #8FC1B5;
+        width:100%;
+    }
 
 	.letschat{
-        background-color: #8FC1B5;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
 
+    }
+
+    .chatform {
+        margin-left: 35%;
+        margin-right: 30%;
+        margin-bottom: 30%;
+    }
+
+    .submitbutton{
+        background-color: #146551;
     }
         /* will need more here for the form submission
         will need here for alert */

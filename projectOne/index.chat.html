@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Beth's Portfolio Site</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="chatbody">
     <nav class="navbar">
         <ul class="navbarlistoverlord">
             <!-- figure out how to 1. get this on everypage 2. get it to stick when scrolling 3. buttons to link to other pages -->
@@ -22,8 +22,25 @@
             <li id="chat"><a href="index.chat.html">LET'S CHAT!</a></li>
         </ul>
     </nav>
-    
+
     <div class='letschat'>
+        <form class="chatform">
+            <label for="firstname">First name:</label><br>
+            <input type="text" id="firstname" name="firstname"><br>
+
+            <label for="lastname">Last name:</label><br>
+            <input type="text" id="lastname" name="lastname"><br>
+
+            <label for="email">Enter your email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            
+            <label for="quantity">Contact number:</label><br>
+            <input type="number" id="quantity" name="quantity"><br>
+
+            <textarea name="message" rows="20" cols="70"></textarea>
+
+            <input type="submit" value="Submit" class="submitbutton">
+        </form>
         <!-- contact form to submit info 
         name:
         email:
