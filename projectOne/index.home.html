@@ -14,27 +14,44 @@
     <ul class="navbarlistoverlord">
         <!-- figure out how to 1. get this on everypage 2. get it to stick when scrolling 3. buttons to link to other pages -->
         <!-- have nav bar highlight tab that you are on -->
+        <li></li>
+
         <li id="home"><a href="index.home.html">HOME</a></li>
         <li id="home"><a href="index.bio.html">BIO</a></li>
         <li id="resume"><a href="index.resume.html">RESUME</a></li>
         <li id="projects"><a href="index.projects.html">PROJECTS</a></li>
-        <li id="links"><a href="index.links.html">LINKS</a></li>
         <li id="chat"><a href="index.chat.html">LET'S CHAT!</a></li>
+        <li id="button"><button id="navbarbutton"><a id="navbarbutton" href="index.chat.html">Reach out to Beth</a></button>
+        </li>
     </ul>
-</nav>
 
+        
+</nav>
 <div class='homepage'>
-    
-    <h1 id="title">Beth's portfolio site</h1>
+    <header>
+    <img src="yosemiteviewforwebsite.jpg" class="header-photo">
+    <section class="header-text">
+    <h1 class="title">Beth's portfolio site</h1>
+    <h2>Write something else here</h2>
+    </section>
+
+</header>
+
+
+
     <div class='whoisbeth'>
+        <div class="stackthis">
         <img class ='homepageheadshot' src="headshot.jpg">
+        <button id="whobutton"><a href="index.bio.html">Learn more about Beth</a></button>
+        </div>
+
         <div id="whoisbethpara">
         <h3 id="whoheaderhome">Who is Beth?</h3>
 
-        <p id="whoparahome">I am a software engineer with a background in personal training and biomechanics. My core skills include JavaScript, HTML, and CSS.</p>
-        <p id="whoparahome">The application of biomechanics to personal training sparked my love for complex problem solving. In my practice I would look at the body as a system working together and need to find the "bugs" in the system that were impacting peoples movement. I would then write a program to "debug" the root cause of the system to help someone move pain free. (Have you ever tried explaining to someone that their shoulder pain is coming from a wonky ankle?)</p>
-        <p id="whoparahome">I launched a small business at the start of March 2020. I was able to build my business to $100k annual revenue. This experience has taught me to push my comfort zone, take action (and succeed) with skills I was learning on the fly, and to persevere through difficult times.</p>
-        <p id="whoparahome">I am excited that software engineering will lend to my love for complex problem systemic solving. I am hoping that in the future I can progress into a project managment role. I am very proud of my ability to push someone to the next level without pushing them over the edge. I believe that combining these two skills would make me a valuable asset to any companies managment team. </p>
+        <p id="whoparahome">I am a software engineer with a background in personal training and biomechanics. My core skills include JavaScript, HTML, and CSS, flexbox, and jQuery.</p>
+        <p id="whoparahome">The application of biomechanics to personal training sparked my love for complex problem solving. I am hoping that in the future I can progress into a project managment role.</p>
+        <p id="whoparahome">I believe that combining my problem solving and leadership skills would make me a valuable asset to any companies team.</p>
+        
         <!-- have who is beth centereed on top, position img to left, paragraph to the right -->
         </div>
     </div>
@@ -42,7 +59,6 @@
     <div class='whatpeoplearesaying'>
         <h3 id="whatheaderhome">What are other people saying about Beth?</h3>
         <div class="carousel-container">
-            <!-- previous button -->
             <div class="carousel-button previous">
               
                 <span><</span>
@@ -67,7 +83,6 @@
     <div class="glimpseintolife">
         <h3 class="glimpseheader">Get a glimpse into Beth's greatest adventure, life.</h3>
         <ul class="glimpsephotolist">
-        <li class="glimpsephotoli"><img class="glimpsephotohome" src="yosemite.jpg" alt="After a 8 mile ascent while battling elevation sickness, Beth stands at 10,000 feet of elevation over Yosemite National Park. You can see Half Dome in the background."></li>
         <li class="glimpsephotoli"><img class="glimpsephotohome" src="acadia.jpg" alt="Beth is happiest on the edge of a mountain. She is posing on rungs hammered into the mountain at Acadia National Park."></li>
         <li class="glimpsephotoli"><img class="glimpsephotohome" src="cowsvt.png" alt=""></li>
         <li class="glimpsephotoli"><img class="glimpsephotohome" src="panther.jpg" alt="Beth is standing with her cat, Panther, behind a screen door at a cottage in New Hampshire. In this moment, she feels most at home."></li>
@@ -77,15 +92,24 @@
         <!-- have photos enlarge when hovering over them -->
         </ul>
     </div>
+
+    <div class="importantlinks">
+        <h3 id="titleflexbox">Where to find Beth</h3>
+        <div class="linksflexbox">
+        <a href="https://www.linkedin.com/in/beth-mills-7063bb235"><img src="LI-Logo.png" class="photoswithlinks"></a>
+        <a href="https://github.com/bethjm"><img src="GitHub_Logo.png" class="photoswithlinks"></a>
+        </div>
+    </div>
+
 </div>
 
 
-<!-- <footer class="'footer">
+<footer class="'footer">
     <h5 id="footername">Beth Mills</h5>
     <p id="footeremail">email</p>
     <p id="footercell">phone number</p>
     add social links
-</footer> -->
+</footer>
        
 </body>
 </html> 

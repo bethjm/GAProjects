@@ -14,12 +14,13 @@
         <ul class="navbarlistoverlord">
             <!-- figure out how to 1. get this on everypage 2. get it to stick when scrolling 3. buttons to link to other pages -->
             <!-- have nav bar highlight tab that you are on -->
+            <li></li>
             <li id="home"><a href="index.home.html">HOME</a></li>
             <li id="home"><a href="index.bio.html">BIO</a></li>
             <li id="resume"><a href="index.resume.html">RESUME</a></li>
             <li id="projects"><a href="index.projects.html">PROJECTS</a></li>
-            <li id="links"><a href="index.links.html">LINKS</a></li>
             <li id="chat"><a href="index.chat.html">LET'S CHAT!</a></li>
+            <button id="navbarbutton"><a href="index.chat.html">Reach out to Beth</a></button>
         </ul>
     </nav>
 
@@ -47,14 +48,15 @@
                     <label for="quantity">Contact number:</label><br>
                     <input type="number" id="quantity" name="quantity"><br>
         
-                    <textarea name="message" rows="12" cols="30"></textarea>
+                    <textarea name="message" rows="12" cols="30"></textarea><br>
         
                     <input type="submit" value="Submit">
+                    <div id="modal-footer">
+                        <button class='modal-buttons' id='close' href="#">close</button>
+                    </div>
                 </form>
 	
-				<div id="modal-footer">
-					<button class='modal-buttons' id='close' href="#">close</button>
-				</div>
+
 	
 			</div>
 		</div>
